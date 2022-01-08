@@ -1,0 +1,2 @@
+
+from ninjaRPG import game
