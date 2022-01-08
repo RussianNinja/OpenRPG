@@ -1,4 +1,3 @@
-
 from ninjaRPG.game import Game
 from ninjaRPG.toolser import clear_screen
 

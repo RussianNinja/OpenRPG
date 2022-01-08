@@ -1,5 +1,5 @@
+from ninjaRPG.ninja_scens_manager import load_map
 from ninjaRPG.user_input_parser import user_comand
-import scens_manager
 
 
 class Game:
@@ -15,4 +15,4 @@ class Game:
         print("#  -Введите комманду меню- #")
         choice = user_comand("> ").lower()
         if choice == "обучающая игра":
-            scens_manager.load_map(choice)
+            load_map('educational_game')
