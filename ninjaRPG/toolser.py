@@ -2,7 +2,8 @@ import os
 import sys
 
 
-def clear_screen(self):
-    if sys.platform=='win32':
+def clear_screen():
+    if sys.platform == 'win32':
         os.system('cls')
-    else: os.system('clear')
+    else:
+        os.system('clear')

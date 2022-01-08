@@ -1,10 +1,11 @@
-from ninjaRPG import toolser
+
 from ninjaRPG.game import Game
+from ninjaRPG.toolser import clear_screen
 
 game = Game()
 
 def start():
-    toolser.clear_screen()
+    clear_screen()
     print("Это моя первая игра на Питоне")
     print("Прошу прощения за ошибки и корявый код")
     print('############################')

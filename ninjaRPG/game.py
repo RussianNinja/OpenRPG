@@ -1,20 +1,18 @@
-import os
-import sys
-
-import toolser
-import user_input_parser as user_input
+from ninjaRPG.user_input_parser import user_comand
+import scens_manager
 
 
 class Game:
     def __init__(self):
         pass
+
     def main_menu(self):
-        print("#  -Введите комманду меню- #")
         print('############################')
         print("#      -Обучающая игра-    #")
         print("#       -Новая игра-       #")
         print("#          -Выход-         #")
         print('############################')
-
-        choice = user_input
-
+        print("#  -Введите комманду меню- #")
+        choice = user_comand("> ").lower()
+        if choice == "обучающая игра":
+            scens_manager.load_map(choice)
