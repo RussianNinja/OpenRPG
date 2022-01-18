@@ -1,4 +1,4 @@
-from ninjaRPG.ninja_scens_manager import load_map
+from ninjaRPG.scens_manager import load_map
 from ninjaRPG.user_input_parser import user_comand
 
 
@@ -16,3 +16,5 @@ class Game:
         choice = user_comand("> ").lower()
         if choice == "обучающая игра":
             load_map('educational_game')
+        elif choice == "новая игра":
+            load_map("new_game")
