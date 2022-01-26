@@ -7,3 +7,6 @@ def clear_screen():
         os.system('cls')
     else:
         os.system('clear')
+
+def exit_game():
+    sys.exit(0)

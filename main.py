@@ -13,5 +13,6 @@ def start():
     game.main_menu()
 
 if __name__ == '__main__':
-    start()
+    while(True):
+        start()
     print("Game END!")
